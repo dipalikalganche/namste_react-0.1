@@ -1,20 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; 
-                                                                 
-//jsx (transpiled before it reaches the js) -parcel-Babel
+   
+const elem = <span>React Element</span>;
 
-//jsx =>  babel is transpiles it to React.createElement => ReactElement -Js object =>HTMLElement(render)
-
-//React element
-const heading =(
+const Title = () =>(
    <h1 className="head" tabIndex="5">
         Namaste React using JSX
    </h1>
 );
 
-//React functional Component 
 const HeadingComponent = () => (
    <div id="container">
+      {Title()}
        <h1 className="heading">namaste React Functional Component</h1>
    </div>  
 );
